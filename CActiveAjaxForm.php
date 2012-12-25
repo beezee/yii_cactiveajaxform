@@ -15,18 +15,6 @@ class CActiveAjaxForm extends CActiveForm
                 $this->focus="#".CHtml::activeId($this->focus[0],$this->focus[1]);
         echo CHtml::endForm();
         $cs=Yii::app()->clientScript;
-        if(!$this->enableAjaxValidation && !$this->enableClientValidation || empty($this->attributes))
-        {
-                if($this->focus!==null)
-                {
-                        $cs->registerCoreScript('jquery');
-                        $cs->registerScript('CActiveForm#focus',"
-                                if(!window.location.hash)
-                                        $('".$this->focus."').focus();
-                        ");
-                }
-                return;
-        }
 
         $options=$this->clientOptions;
         if(isset($this->clientOptions['validationUrl']) && is_array($this->clientOptions['validationUrl']))
