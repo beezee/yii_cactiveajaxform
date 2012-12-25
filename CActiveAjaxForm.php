@@ -32,7 +32,6 @@ class CActiveAjaxForm extends CActiveForm
                     var sCb = $afterSaveCB;
                     if (hasError)
                         return vCb(form, data, hasError);
-                    console.log(data);
                     $.post('{$this->action}', form.serialize(), function(r){
                         sCb(r, form, data);
                     });
