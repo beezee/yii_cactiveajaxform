@@ -16,7 +16,8 @@ Drop it in your components folder and use according to the example below:
             'id'=>'new-tag-form',
             'clientOptions' => array(
                 'afterSave' => 'js:function(result, form) {
-                                    form.each(function() { this.reset(); });}'
+                                    form.each(function() { this.reset(); });}',
+                'onSubmit' => 'js:function() { //some extra stuff to do when form is submitted }',
             ),
             'action' => CHtml::normalizeURL(array('tag/create')),
             'htmlOptions' => array('class' => 'form-inline'),
