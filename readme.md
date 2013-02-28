@@ -7,7 +7,7 @@ can trip a seperate, simultaneous call to validate alongside submission, creatin
 
 The issue is discussed here - http://code.google.com/p/yii/issues/detail?id=2008
 
-Qiang Xue suggests an alternative to CACtiveForm to handle these scenarios, which is what this class does.
+Qiang Xue suggests an alternative to CACtiveForm to handle these scenarios, which is what this extension does.
 
 Drop activeajaxform in your extensions folder add the path to your import listing
 and use according to the example below:
