@@ -9,7 +9,8 @@ The issue is discussed here - http://code.google.com/p/yii/issues/detail?id=2008
 
 Qiang Xue suggests an alternative to CACtiveForm to handle these scenarios, which is what this class does.
 
-Drop it in your components folder and use according to the example below:
+Drop activeajaxform in your extensions folder add the path to your import listing
+and use according to the example below:
 
     <div class="add_tag pull-left">
         <?php $form=$this->beginWidget('CActiveAjaxForm', array(
